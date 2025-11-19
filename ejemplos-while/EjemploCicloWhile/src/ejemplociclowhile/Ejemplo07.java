@@ -31,16 +31,17 @@ public class Ejemplo07 {
         int contador = 0;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
-        while (bandera) {
+        while (bandera) { // true == ture >> true | Ingreso al ciclo
+                          // false == ture >> false | Salgo del ciclo
             System.out.println("Ingrese calificación");
-            calificacion = entrada.nextDouble();
-            suma_total = suma_total + calificacion;
-            contador = contador + 1;
+            calificacion = entrada.nextDouble(); // 7 | 9.5
+            suma_total = suma_total + calificacion; // 7 + 0 = 7 | 7 + 9.5 = 16.5
+            contador = contador + 1; // 0 + 1 = 1 | 1 = 1 + 2
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor de -1 para salir del ciclo");
-            int temporal = entrada.nextInt();
-            if (temporal == -1) {
-                bandera = false;
+            int temporal = entrada.nextInt(); // 2 | -1
+            if (temporal == -1) { // 2 | -1
+                bandera = false; // flase == flase >> false
             }
 
         }
@@ -50,3 +51,10 @@ public class Ejemplo07 {
 
     }
 }
+
+/* El programa permite calcular el promedio de notas ingresadas por el usuario,
+siempre y cuando el ususario decida mantenerse en el ciclo. Una vez el usuario
+decida terminr con el ciclo el programa calculara el promedio tomando la suma
+de las notas tomadas por el acumulador y dividiendo para el numero de notas
+tomadas por el contador.
+*/
