@@ -40,9 +40,7 @@ public class Ejemplo05 {
             // contador
             contador = contador + 1;
         }
-        
         promedio_final = suma_total/limite;
-        System.out.printf("El promedio final es %f\n", promedio_final);
-        
+        System.out.printf("El promedio final es %f\n", promedio_final);      
     }
 }
